@@ -24,11 +24,20 @@ I resolved the issue by:
 - Rebooting the VM
 - Regaining RDP access without changing the NIC inside the VM
 
+**Screenshot – Static IP Settings:**  
+![Static IP Settings](./static_ip_settings.png)
+
 ## Warnings Observed During Promotion
 
 - **Static IP Warning**: The promotion wizard warned that no static IP was assigned. This is expected when the NIC is configured via Azure and the VM uses DHCP.
 - **DNS Delegation Warning**: Another expected warning when creating a new forest without an existing parent DNS domain.
 - **Disk Write Cache Warning**: The wizard noted that disk write caching could not be disabled on the C: drive. This is normal for Azure VMs and does not impact functionality.
+
+**Screenshot – AD DS Role Selection:**  
+![Role Selection](./role_selection.png)
+
+**Screenshot – Domain Controller Promotion Wizard:**  
+![Domain Promotion](./dc_promotion.png)
 
 ## Domain Verification
 
@@ -38,6 +47,9 @@ I resolved the issue by:
 - RDP login successful using `guruwatte\nathan-admin`
 - `Get-ADDomain` and `dcdiag` returned healthy results
 - ADUC and DNS Manager both showed expected domain structure
+
+**Screenshot – Active Directory Users and Computers:**  
+![ADUC](./ADUC.png)
 
 ## Skills Demonstrated
 
