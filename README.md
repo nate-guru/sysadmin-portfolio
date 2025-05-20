@@ -11,8 +11,8 @@ The goal of this portfolio is to demonstrate practical, job-ready skills that re
 ### [Project 1 – Active Directory Domain Setup](./Project-01_AD-DS-Setup)
 Deployed a Windows Server 2022 VM in Azure and promoted it to a domain controller in a new forest (`guruwatte.lab`). Configured DNS and verified the environment. Includes a breakdown of key warnings and a real-world recovery from an RDP lockout caused by incorrect static IP configuration.
 
-### Project 2 – User, Group, and OU Management *(Coming Soon)*
-Will cover the creation of a realistic organizational unit structure, role-based security groups, and user accounts to simulate an IT-managed workforce. Will also include PowerShell automation for bulk account creation.
+### [Project 2 – User, Group, and OU Management](./Project-02_Users-Groups-OUs)
+Created a structured set of Organizational Units (OUs) to simulate a departmental hierarchy. Provisioned user accounts for IT, HR, and Sales; created corresponding security groups; and assigned users to the correct groups. Verified configuration using PowerShell and documented the process with screenshots.
 
 ### Project 3 – Group Policy Implementation *(Planned)*
 Will demonstrate how to enforce workstation policies across different departments using Group Policy Objects (GPOs), including security hardening, UX changes, and folder redirection.
